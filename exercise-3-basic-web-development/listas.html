@@ -9,7 +9,20 @@
 <body>
   <header>
     <h1>Listas e Navegação</h1>
-    <p class="destaque">Hobbies, receita e links.</p>
+    <button class="hamburger" aria-label="Abrir menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+    <p class="destaque">Exemplos de listas, receitas e links úteis.</p>
   </header>
   <main>
     <section>
@@ -45,5 +58,10 @@
   <footer>
     <p>&copy; 2025 Isabeli Romano. Todos os direitos reservados.</p>
   </footer>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-menu').classList.toggle('open');
+    }
+  </script>
 </body>
 </html> 

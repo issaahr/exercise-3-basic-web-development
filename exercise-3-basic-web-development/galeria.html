@@ -9,6 +9,19 @@
 <body>
   <header>
     <h1>Galeria de Imagens</h1>
+    <button class="hamburger" aria-label="Abrir menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="listas.html">Listas</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
     <p class="destaque">Exemplo de galeria responsiva usando Grid e Flexbox.</p>
   </header>
   <main>
@@ -52,5 +65,10 @@
   <footer>
     <p>&copy; 2025 Isabeli Romano. Todos os direitos reservados.</p>
   </footer>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-menu').classList.toggle('open');
+    }
+  </script>
 </body>
 </html> 
